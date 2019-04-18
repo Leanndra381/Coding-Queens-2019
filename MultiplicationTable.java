@@ -1,12 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
-    <exclude-output />
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-    </content>
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-</module>
+package com.company;
 
+
+import java.util.Scanner;
+public class MultiplicationTable {
+
+    public static void main(String[] args) {
+
+	    int size = 0;
+
+
+
+
+
+
+
+	    System.out.println("Welcome to Multiplication Table.");
+        System.out.println("How large would you like to see them?");
+        Scanner in = new Scanner(System.in);
+        size = in.nextInt();
+
+
+
+     for (int counter = 0; counter <= size; counter++)
+        {
+            for (int columns = 0; columns <= size; columns++)
+            {
+                System.out.println(counter + "*" + columns + "=" + counter * columns);
+            }
+        }
+
+
+    }
+}
