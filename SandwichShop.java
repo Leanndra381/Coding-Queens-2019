@@ -9,67 +9,51 @@ import java.util.Scanner;
 public class SandwichShop  {
 
     public static void main (String[] args) {
-        Scanner Keyboard = new Scanner (System.in);
+        Scanner Keyboard = new Scanner(System.in);
 
 
-        int Sandwichgoal = 50;
+        int sandwichGoal = 50;
         out.println("Checking sales goals.");
-        int Sandwichsold;
+
         out.println("The sale goal for veggie sandwiches is 50.");
         out.println("How many sandwiches were sold?");
-        Sandwichsold = Keyboard.nextInt();
-        out.println("Made goal for sandwiches");
+        Keyboard.next();
+
+        int Sandwichsold = 0;
+        if (Sandwichsold <= sandwichGoal) {
+            out.println("Goal Made for sandwiches!");
+        } else {
+            out.println("Fell short");
+        }
 
 
-        int Burgergoal = 250;
-        int Burgersold;
-        out.println("The sales goal for burgers is 250.");
+        int Burgersold = 0;
+        out.println("The sales goal for burgers is 250");
         out.println("How many burgers were sold? ");
-        Burgersold = Keyboard.nextInt();
-        out.println("Made goal for burgers");
+        Keyboard.next();
+
+        if (Burgersold <= 250) {
+            out.println("Goal made for Burgers ");
+        } else {
+            out.println("Fell short");
+        }
 
 
-        int Soupgoal = 70;
-        int Soupsold;
-        out.println("The sales goal for soups is 180.");
+        int Soupsold = 0;
+
+        out.println("The sales goal for soups is 180");
         out.println("How many soups were sold?");
-        Soupsold = Keyboard.nextInt();
+        Keyboard.next();
 
-        out.println("Made goal for soup.");
-        Keyboard.nextInt();
-
-        out.println("Made goal for everything!");
-         }
-            }
-
+        if (Soupsold <= 70) {
+            out.println("Goal made for Soups");
+        } else
+            out.println("Fell short");
+        {
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            out.println("Made goal for everything!");
+        }
+        }
+    }
 
